@@ -1,3 +1,3 @@
-## React Bootstrap
+## React Router Examples
 
-Bootstrap React project for Week 13 at Manchester Codes
+Manchester Codes - React Router Lecture Examples
