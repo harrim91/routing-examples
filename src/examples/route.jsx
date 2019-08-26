@@ -1,9 +1,28 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-const Home = () => <h1>Home</h1>;
+const Home = () => <h1>Hello React-Router!</h1>;
+const AllUsers = () => (
+  <div>
+    <li>
+    Ersel
+    </li>
+    <li>
+    Joe
+    </li>
+  </div>
+);
 
-const Users = () => <h1>Users</h1>;
+const UserProfile = () => (
+  <div>Ersel - twitter @ErselAker</div>
+);
+
+const Users = () => (
+  <div>
+    Users
+    <Route path="/users/all" component={AllUsers} />
+    <Route path="/users/1" component={UserProfile} />
+  </div>);
 
 const App = () => (
   <div>
